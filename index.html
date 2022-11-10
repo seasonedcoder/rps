@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    
+  <header class="head">
+    <div class="heading">
+        <h1>Rock, paper and scissors</h1>
+        <h3>Let's see who wins</h3>
+    </div>
+  </header>
+    <!-- buttons -->
+    <div class="buttons">
+        <button class="select" value="rock" data-choice="rock">Rock</button>
+        <button class="select" value="paper"data-choice="paper">Paper</button>
+        <button class="select" value="scissor" data-choice="scissor">Scissor</button>
+    </div>
+<!-- score board-->
+    <div class="score">
+        <div class="player">
+            <h3 >Your score</h3>
+            <p class="pscore"></p>
+        </div>
+        <div class="computer">
+            <h3>Computer score</h3>
+            <p class="cscore"></p>
+        </div>
+    </div>
+    <!-- who wins -->
+  <div class="textscore">
+      <h3 class="declare"></h3>
+  </div>
+  <footer class="footer">
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn"  id="restartBtn">Play again</button>
+      </div>
+      <div class="overlay" id="overlay"></div>    
+  </footer>
+  <script src="/uiscript.js"></script>
+</body>
+</html>

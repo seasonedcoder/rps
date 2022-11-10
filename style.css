@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lilita+One&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--body-color);
+}
+
+
+body{
+    background-color: yellow;
+    font-family: 'Josefin Sans', sans-serif;
+
+    height: 100vh;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3rem;
+    padding:1rem;   
+}
+
+.select:hover{
+    transform: scale(1.1);
+    transition: ease-in 0.1s;
+    color: green;
+}
+
+.head{
+    display:flex;   
+    justify-content: center;
+    text-align: center;
+    margin:40px 0px;
+}
+
+.select{
+    height:100px;
+    width: 100px;
+    margin:3rem;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.cscore, .pscore{
+    text-align: center;
+    
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    color: var(--primary-light);
+    font-size: 20px;
+  }
+
+  .btn{
+    border:none;
+    font-weight: 700;
+  }
+
+  .btn:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
+    color:forestgreen;
+  }
+
+  .textscore{
+    text-align: center;
+    margin: 50px;
+  }
+  @media only screen and (max-width:450px)  {
+
+    .select{
+    height: 50px;
+    width: 50px;
+    margin: 0.5rem;
+    border: none;
+    font-size: 20px;
+    }
+    
+  }
